@@ -1,2 +1,2 @@
-#export http_proxy=http://<username>:<password>@192.168.0.4:8080
-#export https_proxy=http://<username>:<password>@192.168.0.4:8080
+#export http_proxy=http://<username>:<password>@192.168.1.2:8080
+#export https_proxy=http://<username>:<password>@192.168.1.2:8080
