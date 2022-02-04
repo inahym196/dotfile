@@ -12,31 +12,27 @@ set tabstop=2
 set shiftwidth=2
 set ignorecase
 set nohlsearch
-hi Search ctermbg=Cyan ctermfg=darkgreen
-
-hi LineNr ctermfg=lightgrey
-hi CursorLine cterm=None
-noremap j gj
-noremap k gk
 
 syntax on
+
+hi Search ctermbg=Cyan ctermfg=darkgreen
+hi LineNr ctermfg=lightgrey
+hi CursorLine cterm=None
+
+noremap j gj
+noremap k gk
+noremap <C-h> 0
+noremap <C-l> $
+nnoremap U <c-r>
+noremap x "_x
+noremap X "_X
+nnoremap ; :
+nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap n nzz
+nnoremap N Nzz
+
 inoremap <silent> jj <ESC>
+inoremap <C-d> <Del>
 
-"ウィンドウ分割を楽にする設定
-nnoremap ss :<C-u>sp<CR>
-nnoremap sv :<C-u>vs<CR>
-nnoremap sq :<C-u>q<CR>
-nnoremap sQ :<C-u>bd<CR>
-nnoremap sj <C-w>j
-nnoremap sk <C-w>k
-nnoremap sl <C-w>l
-nnoremap sh <C-w>h
-nnoremap sJ <C-w>J
-nnoremap sK <C-w>K
-nnoremap sL <C-w>L
-nnoremap sH <C-w>H
-
-"タブ操作
-nnoremap st :<C-u>tabnew<CR>
-nnoremap sn gt
-nnoremap sp gT
+imap <C-h> <BS>
