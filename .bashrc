@@ -127,6 +127,6 @@ if [[ -t 0 ]]; then
   stty start undef
 fi
 
-if [ -f ~/.proxy ]; then
-  . ~/.proxy
+if [ -f ~/.bash_custom ]; then
+  . ~/.bash_custom
 fi
